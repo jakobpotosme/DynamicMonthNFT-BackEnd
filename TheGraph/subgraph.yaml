@@ -1,0 +1,39 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: DynamicMonthNft
+    network: rinkeby
+    source:
+      address: "0xc9cB8bD6bBCe97db0402A96CB54E81456DD641e8"
+      abi: DynamicMonthNft
+      startBlock: 11191667
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - CreatedNft
+        - NftMinted
+        - OwnershipTransferred
+        - Transfer
+      abis:
+        - name: DynamicMonthNft
+          file: ./abis/DynamicMonthNft.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: CreatedNft(uint256,address)
+          handler: handleCreatedNft
+        - event: NftMinted(uint8,address,address,uint256)
+          handler: handleNftMinted
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/dynamic-month-nft.ts

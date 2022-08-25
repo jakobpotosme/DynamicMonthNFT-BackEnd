@@ -1,0 +1,7 @@
+type NftMinted @entity {
+  id: ID!
+  month: Int!
+  minter: Bytes! #address
+  nftAddress: Bytes!
+  tokenId: BigInt!
+}
