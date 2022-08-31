@@ -15,6 +15,9 @@ const MAINNET_RPC_URL =
 const RINKEBY_RPC_URL =
   process.env.RINKEBY_RPC_URL ||
   "https://eth-rinkeby.alchemyapi.io/v2/your-api-key";
+const GOERLI_RPC_URL =
+  process.env.GOERLI_RPC_URL ||
+  "https://eth-rinkeby.alchemyapi.io/v2/your-api-key";
 const KOVAN_RPC_URL =
   process.env.KOVAN_RPC_URL ||
   "https://eth-kovan.alchemyapi.io/v2/your-api-key";
@@ -62,6 +65,13 @@ module.exports = {
       // },
       saveDeployments: true,
       chainId: 42,
+    },
+    goerli: {
+      url: GOERLI_RPC_URL,
+      accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+      saveDeployments: true,
+      chainId: 5,
+      blockConfirmations: 6,
     },
     rinkeby: {
       url: RINKEBY_RPC_URL,

@@ -16,18 +16,18 @@ const metadataTemplate = {
 };
 
 let tokenUris = [
-  "ipfs://QmPLSuvBpUgMeFLCwmdyLPckfkDeHDvj6VMZJQCQUFh1fb",
-  "ipfs://Qme9vx69jqmLGYTZxjrKKPGG1SbGNi55WNEykdRN5xAC63",
-  "ipfs://QmRLduwyZWLGXdp14ysUfMFtSkqPPnUdfUu7xHyoAQpRzR",
-  "ipfs://QmTtCSt44keYdB9jzLnRHzbgaihHzi6oENjkBXnJbLKGhs",
-  "ipfs://QmeqXezq9tuoQx2w3pUC3Y5V37ZhEm9dtsrGLhcuHHfHxk",
-  "ipfs://QmNLyY5bShLs6RSoYUoM73WGwVwmvNiH8fBygrti5rNJ3t",
-  "ipfs://QmRSpVKxTjp9MAWm7d5ssTfH5r6UbRyVUw9mEboeFCiDhd",
-  "ipfs://QmSwMpBopBzVnKHXLCUt5tLVDXacHYNhAFFJFCiu7pJBBx",
-  "ipfs://QmUYJnSNrTgPgWpSdy4gKCKyhTrFWDvXVCoyZQQdeyguCJ",
-  "ipfs://QmbVnma6VajU6xXrRH5HW9nCVNq1tpDHQd7AN9eacuso7Q",
-  "ipfs://Qmcbx7vd4h5nLJAsdtXySkvomRpwXwVcXJNbQ9XBkNFDq1",
-  "ipfs://QmSkRBGyCk3x9d3qg9VbLUuYD7BYGDhrds4QKiGnWcufyg",
+  "ipfs://QmaNSopDAsqVTL3Vyq86NAQ1fLhjHpampwTEZUrEhV9n9G",
+  "ipfs://QmVbrTzhyqBFW2cjiy5KE4ugKFQhETPK5kmAMrr655vGz6",
+  "ipfs://QmaGCeRxFZ16UwS9C7Qisd1GEE6dZtejN3jWPmDuVppWq3",
+  "ipfs://QmZtfFAe37498fdYEQ2QdpTxxWihmvtBtF7UVoqvJJMSKa",
+  "ipfs://QmToEN4SQmDFpDvGo7P4941wrr8FNx71XiywDdLUAwV51j",
+  "ipfs://QmWmbP495c5uZhABBvAACi8VvSWB1QGfpA6nTLGwofoQZP",
+  "ipfs://QmYtFrJ26P1bK1KfuRF8znh5oTkC5Es9XbnjrpjUdDir1b",
+  "ipfs://QmcUWuoMhuGqK3hkhixUbhAZMTZqkRcUwV99oVSCiVDVWx",
+  "ipfs://QmRMfGCqiibcHcPLtZdfmoT5dyws9B91cYTJwYihGx2anN",
+  "ipfs://QmZzKGptSYz9aZC7jfAqMhkH8P7QwCmPGWoCqDDEk6k6xc",
+  "ipfs://QmUy7qzHJ2UdkvGR69veMvqoAajjnpSwcJLpxc48MJjAyM",
+  "ipfs://QmfPZn3Es2C4R5noYEPGEMJjeDM5dSqXgPZPqBQiV4oDh4",
 ];
 
 module.exports = async function ({ getNamedAccounts, deployments }) {

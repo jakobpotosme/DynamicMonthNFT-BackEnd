@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: DynamicMonthNft
-    network: rinkeby
+    network: görli
     source:
-      address: "0xc9cB8bD6bBCe97db0402A96CB54E81456DD641e8"
+      address: "0x4B4364f01f136fBd5d2E445E37cf9B839644d15f"
       abi: DynamicMonthNft
-      startBlock: 11191667
+      startBlock: 11294929
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
